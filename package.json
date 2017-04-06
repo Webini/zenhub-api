@@ -1,0 +1,27 @@
+{
+  "name": "zenhub-api",
+  "version": "0.1.0",
+  "description": "Wrapper for zenhub api",
+  "main": "src/index.js",
+  "dependencies": {
+    "debug": "^2.6.3",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Webini/zenhub-api.git"
+  },
+  "author": "GASPARINI Nicolas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Webini/zenhub-api/issues"
+  },
+  "homepage": "https://github.com/Webini/zenhub-api#readme"
+}
