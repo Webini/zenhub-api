@@ -1,7 +1,11 @@
 {
-  "apiKey": "apiKey",
+  "apiKey": apiKey,
   "repoId": repoId,
+  "secondRepoId": Need another repo to add/remove from workspace,
   "issueNumber": issueId,
-  "epicIssueNumber": epidIssueId,
-  "pipelineId": "move to this pipeline id"
+  "epicIssueNumber": epicIssueId,
+  "pipelineId": "move to this pipeline id",
+  "releaseTitle": "Test release",
+  "releaseDescription": "Test description",
+  "releaseId": Needs to be added here
 }

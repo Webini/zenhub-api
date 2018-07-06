@@ -43,6 +43,38 @@ const API_ENDPOINTS = {
   addOrRemoveToEpic: {
     method: 'POST',
     path: '/repositories/:repo_id/epics/:issue_number/update_issues'
+  },
+  createReleaseReport: {
+    method: 'POST',
+    path: '/repositories/:repo_id/reports/release'
+  },
+  getReleaseReport: {
+    method: 'GET',
+    path: '/reports/release/:release_id'
+  },
+  getReleaseReportsForRepo: {
+    method: 'GET',
+    path: '/repositories/:repo_id/reports/releases'
+  },
+  editReleaseReport: {
+    method: 'PATCH',
+    path: '/reports/release/:release_id'
+  },
+  addWorkspaceToReleaseReport: {
+    method: 'PATCH',
+    path: '/reports/release/:release_id/workspaces/add'
+  },
+  removeWorkspaceFromReleaseReport: {
+    method: 'PATCH',
+    path: '/reports/release/:release_id/workspaces/remove'
+  },
+  getReleaseReportIssues: {
+    method: 'GET',
+    path: '/reports/release/:release_id/issues'
+  },
+  addOrRemoveToReleaseReport: {
+    method: 'PATCH',
+    path: '/reports/release/:release_id/issues'
   }
 };
 
@@ -51,6 +83,7 @@ function callServer(apiKey, params, endpoint) {
     .replace(':repo_id', params.repo_id)
     .replace(':issue_number', params.issue_number)
     .replace(':epic_id', params.epic_id)
+    .replace(':release_id', params.release_id)
   ;
 
   debug('%s %s with %o', endpoint.method, uri, params);
