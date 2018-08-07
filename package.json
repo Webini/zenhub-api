@@ -1,6 +1,6 @@
 {
   "name": "zenhub-api",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Wrapper for zenhub api",
   "main": "src/index.js",
   "dependencies": {
@@ -13,7 +13,8 @@
     "zenhub-api"
   ],
   "devDependencies": {
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "nock": "^9.4.4"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha test/index.js"

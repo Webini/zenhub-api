@@ -6,7 +6,7 @@ Node.js ZenHub Api
 ```js
   const ZenHub = require('zenhub-api');
 
-  const api = new ZenHub(apiKey);
+  const api = new ZenHub(apiKey, [rootEndpoint]);
   api
     .getBoard({ repo_id: 01234 })
     .then((data) => {
@@ -17,6 +17,11 @@ Node.js ZenHub Api
     })
   ;
 ```
+
+
+
+The [root endpoint](https://github.com/ZenHubIO/API#root-endpoint) is only required for Enterprise ZenHub installations. It is likely to be https://zenhub-enterprise-host.
+
 You can find more samples in the test directory.
 
 ## Official documentation
