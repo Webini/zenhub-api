@@ -1,7 +1,7 @@
 const request = require('request-promise-native');
 const debug   = require('debug')('ZenHub');
 
-const API_URL = 'https://api.zenhub.io/p1';
+const API_URL = 'https://api.zenhub.com/p1';
 
 const API_ENDPOINTS = {
   getIssueData: {
